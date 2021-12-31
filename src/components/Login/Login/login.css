@@ -1,0 +1,12 @@
+.login-area{
+    
+    background-color: #F5F5FB;
+    color: #F63E7B;
+    height: 600px;
+}
+.login-area button{
+    font-size: 25px;
+    padding: 10px;
+    padding-right: 70px;
+}
+ 
