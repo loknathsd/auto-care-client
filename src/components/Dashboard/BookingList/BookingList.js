@@ -38,7 +38,7 @@ const BookingList = () => {
                             </div>
                                 :
                                 <div className='p-5' >
-                                    <h4 className='lead text-center'>No Appointments for this date</h4>
+                                    <h4 className='lead text-center'>No Order Yet</h4>
                                 </div>
                         }
                     </div>
