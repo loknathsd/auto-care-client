@@ -15,8 +15,8 @@ const Reviews = () => {
     },[])
     return (
         <div id='reviews' className='container my-5 py-5 '>
-            <h1 style={{color: '#F63E7B'}} className='text-center'>REVIEWS</h1>
-            <div className="row">
+            <h1 style={{color: '#F63E7B'}} className='text-center mb-5'>REVIEWS</h1>
+            <div className="row pb-5">
                 {
                     reviews.map(review=><Review review={review}></Review>)
                 }

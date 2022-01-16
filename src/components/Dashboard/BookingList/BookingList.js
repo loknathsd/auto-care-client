@@ -19,7 +19,7 @@ const BookingList = () => {
                     <Sidebar></Sidebar>
                 </div>
                 <div className="col-md-9 mt-4 pt-4">
-                    <h4 className='mb-4 ms-5 fw-bold'>Service List</h4>
+                    <h4 className='mb-5 ms-5 fw-bold'>Your bookings</h4>
                     <div style={{backgroundColor:'#FFF8F5',padding:'20px'}}>
                         {
                             bookings.length ? <div className="row mt-3">

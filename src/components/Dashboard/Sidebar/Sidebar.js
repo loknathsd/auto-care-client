@@ -27,18 +27,21 @@ const Sidebar = () => {
                 <img style={{ height: '80px', marginTop: '20px' }} src={logo} alt="" />
                 <h1 className='pt-4 mt-1'>AutoCare </h1>
             </div>
+            <p><Link to='/home' >back home</Link> </p>
             <ul className='list-unstyled sidebar  bg-light p-3 fw-bold '>
-                <li>
-                    <Link to="/home"> <span className='text-danger p-2'> <FontAwesomeIcon icon={faShoppingCart} /> </span> Book</Link>
-                </li>
-                <li>
-                    <Link to="/dashboard/bookingList"><span className='text-danger p-2'> <FontAwesomeIcon icon={faList} /> </span> Booking List</Link>
-                </li>
-                <li>
-                    <Link to="/dashboard/review"><span className='text-danger p-2'> <FontAwesomeIcon icon={faCommentDots} /> </span> Review</Link>
+               {!isAdmin && <div>
+                    <li>
+                        <Link to="/home"> <span className='text-danger p-2'> <FontAwesomeIcon icon={faShoppingCart} /> </span> Book</Link>
+                    </li>
+                    <li>
+                        <Link to="/dashboard/bookingList"><span className='text-danger p-2'> <FontAwesomeIcon icon={faList} /> </span> Booking List</Link>
+                    </li>
+                    <li>
+                        <Link to="/dashboard/review"><span className='text-danger p-2'> <FontAwesomeIcon icon={faCommentDots} /> </span> Review</Link>
 
-                </li>
-               { isAdmin &&  <div>
+                    </li>
+                </div>}
+                {isAdmin && <div>
                     <li>
                         <Link to="/dashboard/orderList"> <span className='text-danger p-2'> <FontAwesomeIcon icon={faBars} /> </span> Order list</Link>
                     </li>

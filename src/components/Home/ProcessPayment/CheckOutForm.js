@@ -63,13 +63,7 @@ const CheckOutForm = ({ handlePayment }) => {
                 </button>
             </form>
 
-            {
-                paymentError && <p style={{ color: 'red', marginTop: '20px' }}>{paymentError}</p>
-            }
-            {
-                paymentSuccess && <p style={{ color: 'green', marginTop: '20px' }}>Payment is successful</p>
-            }
-
+          
         </div>
     );
 };

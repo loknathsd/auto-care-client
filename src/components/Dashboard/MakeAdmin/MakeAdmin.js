@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 const MakeAdmin = () => {
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         const email = data.email
         fetch('https://dry-sierra-45415.herokuapp.com/makeAdmin', {
@@ -13,7 +13,8 @@ const MakeAdmin = () => {
             body: JSON.stringify({ email })
         })
             .then(result => {
-                console.log(result)
+                alert('You make a admin successfully')
+                reset()
             })
     }
     return (

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import ProcessPayment from '../../Home/ProcessPayment/ProcessPayment';
 
@@ -7,6 +8,7 @@ const Book = ({ user, serviceInfo }) => {
 
     const { title, price } = serviceInfo;
     const { name, email } = user;
+    const { reset, formState: { errors } } = useForm();
 
     const handlePaymentSuccess = (paymentId) => {
         const orderDetails = {
@@ -23,7 +25,8 @@ const Book = ({ user, serviceInfo }) => {
             body: JSON.stringify(orderDetails)
         })
             .then(result => {
-                console.log(result)
+               alert('Your order is successful')
+               reset();
             })
     }
 

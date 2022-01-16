@@ -9,7 +9,7 @@ const OrderListTable = ({orders}) => {
                     <th scope='col'>Email</th>
                     <th scope='col'>Service</th>
                     <th scope='col'>Pay with</th>
-                    <th scope='col'>Status</th>
+                   
                 </tr>
             </thead>
             <tbody>

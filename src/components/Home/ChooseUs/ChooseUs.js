@@ -12,7 +12,7 @@ const ChooseUs = () => {
                   <div className="col-md-5 mt-4"> 
                      <h1 className='text-brand'>WHY CHOOSE US?</h1>
                      <p className='lead text-secondary my-4'>Just tell us what maintenance and auto repair services you need and we will send a fixed quote .One of our mobile mechanic will come out do a diagnostic visit and create a quote for you</p>
-                     <button type="button" className="btn btn-danger">Learn More</button>
+                     <button type="button " className="btn btn-danger mb-5">Learn More</button>
 
                   </div>
                   <div className="col-md-6 ms-5">

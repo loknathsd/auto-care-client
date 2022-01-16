@@ -1,11 +1,12 @@
 import React from 'react';
 import HeaderMain from '../HeaderMain/HeaderMain';
-import Navbar from '../Navbar/Navbar';
+import Navigation from '../Navigation/Navigation';
+// import Navbar from '../Navigation/Navbar'
 
 const Header = () => {
     return (
         <div style={{backgroundColor: '#743BFC',color:'white'}}>
-            <Navbar></Navbar>
+           <Navigation></Navigation>
             <HeaderMain></HeaderMain>
             
         </div>

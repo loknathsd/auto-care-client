@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUs = () => {
     return (
-        <div id='contactUs' style={{backgroundColor:'#F5F5FB '}} className='container py-5 mb-5 '>
+        <div id='contact' style={{backgroundColor:'#F5F5FB '}} className='container py-5 mb-5 '>
             <h1 className='text-center mb-5 text-brand'>CONTACT US</h1>
             <form style={{width:'50%',margin:'auto',textAlign:'center'}} >
                 <div class="mb-3">

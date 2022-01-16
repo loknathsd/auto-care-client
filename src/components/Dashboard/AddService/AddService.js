@@ -21,6 +21,9 @@ const AddService = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(serviceData)
         })
+        .then(result=>{
+            alert('Service  has been added')
+        })
     }
 
     const handleImageUpload = event => {

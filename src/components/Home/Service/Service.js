@@ -8,7 +8,7 @@ const Service = ({ service }) => {
          history.push(`/dashboard/book/${id}`)
     }
     return (
-        <div className='col-md-4 my-5'>
+        <div className='col-md-4  my-3'>
             <div onClick={()=>handleServiceBook(_id)} className="card text-center ">
                 <div className="card-body">
                     <img className='img-fluid' src={img} alt="" />

@@ -13,8 +13,8 @@ const Services = () => {
         .then(data=>setServices(data))
     },[])
     return (
-        <div id='services' className='container py-4 '>
-            <h1 style={{color:'#F63E7B'}} className='text-center text-uppercase'>Our Services</h1>
+        <div id='services' className='container py-4 mb-5 '>
+            <h1 style={{color:'#F63E7B'}} className='text-center text-uppercase mb-5'>Our Services</h1>
             <div className='row'>
                 {
                     services.map(service =><Service service={service}></Service>)

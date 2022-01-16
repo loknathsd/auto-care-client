@@ -11,13 +11,14 @@ import Login from './components/Login/Login/Login';
 import { createContext, useState } from 'react';
 import Services from './components/Home/Services/Services';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
-import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import AddService from './components/Dashboard/AddService/AddService';
 import AddReview from './components/Dashboard/AddReview/AddReview';
 import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin';
 import ManageServices from './components/Dashboard/ManageServices/ManageServices';
 import BookingList from './components/Dashboard/BookingList/BookingList';
 import OrderList from './components/Dashboard/OrderList/OrderList';
+import Booking from './components/Dashboard/Booking/Booking';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 
 export const ContextUser = createContext();
 
@@ -48,9 +49,9 @@ function App() {
             <AddService></AddService>
           </Route>
           <PrivateRoute path="/dashboard/book/:id">
-            <Dashboard></Dashboard>
+            <Booking></Booking>
           </PrivateRoute>
-          <PrivateRoute path="/admin">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
           <Route path="/login">
